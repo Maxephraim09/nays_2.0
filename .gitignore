@@ -1,0 +1,106 @@
+# Environment files
+.env
+.env.local
+.env.production
+.env.staging
+.env.*.local
+
+# Dependencies
+vendor/
+node_modules/
+
+# IDE
+.idea/
+.vscode/
+*.sublime-*
+.project
+.classpath
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+storage/logs/*.log
+storage/logs/*.txt
+
+# Cache
+storage/cache/
+storage/framework/cache/
+storage/framework/sessions/
+storage/framework/views/
+storage/framework/testing/
+
+# Uploads
+storage/uploads/profiles/
+storage/uploads/documents/
+storage/uploads/portfolio/
+storage/uploads/projects/
+public/assets/uploads/
+
+# Backups
+storage/backups/
+*.backup
+*.sql
+
+# Tests
+coverage/
+phpunit.xml
+.phpunit.result.cache
+
+# Composer
+composer.phar
+composer.lock
+
+# Build files
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Database
+*.sqlite
+*.sqlite3
+
+# Certificates
+*.pem
+*.crt
+*.key
+
+# Environment specific
+public/storage
+storage/oauth-private.key
+storage/oauth-public.key
+
+# IDE helper files
+.phpstorm.meta.php
+_ide_helper.php
+
+# npm
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Security
+*.log
+*.key
+*.pem
+*.crt
+.DS_Store
+Thumbs.db
+
+# Application specific
+public/assets/css/*.min.css
+public/assets/js/*.min.js
+public/assets/css/*.map
+public/assets/js/*.map
+
+# Don't ignore example file
+!.env.example

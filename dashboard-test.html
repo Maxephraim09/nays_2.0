@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Test - NAYS 2.0</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="top-navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <div class="logo-wrapper">
+                    <i class="fas fa-crown logo-icon"></i>
+                    <span class="logo-text">NAYS <span class="logo-highlight">2.0</span></span>
+                </div>
+            </div>
+            <div class="navbar-search">
+                <div class="search-wrapper">
+                    <input type="text" class="search-input" placeholder="Search...">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+            </div>
+            <div class="navbar-actions">
+                <button class="notification-btn">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge">3</span>
+                </button>
+                <button class="profile-btn">
+                    <div class="profile-avatar">
+                        <img src="assets/images/default-avatar.png" alt="Profile">
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-name">John Doe</div>
+                        <div class="profile-role">Administrator</div>
+                    </div>
+                    <i class="fas fa-chevron-down dropdown-arrow"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="dashboard-container">
+        <div class="dashboard-sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-brand">
+                    <i class="fas fa-crown"></i>
+                    NAYS 2.0
+                </div>
+                <button class="sidebar-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <nav class="sidebar-nav">
+                <div class="nav-menu">
+                    <div class="nav-section">
+                        <div class="nav-section-title">MAIN</div>
+                        <div class="nav-item">
+                            <a href="#" class="nav-link active">
+                                <i class="fas fa-tachometer-alt"></i>
+                                Dashboard
+                            </a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-users"></i>
+                                Users
+                            </a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-sitemap"></i>
+                                Branches
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="dashboard-main">
+            <div class="dashboard-hero">
+                <div class="hero-stats-grid">
+                    <div class="stat-card membership-card">
+                        <div class="stat-content">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-value">1,250</div>
+                            <div class="stat-label">Total Members</div>
+                            <div class="stat-change positive">
+                                <i class="fas fa-arrow-up"></i> +12.5%
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card projects-card">
+                        <div class="stat-content">
+                            <div class="stat-icon">
+                                <i class="fas fa-sitemap"></i>
+                            </div>
+                            <div class="stat-value">45</div>
+                            <div class="stat-label">Active Branches</div>
+                            <div class="stat-change positive">
+                                <i class="fas fa-arrow-up"></i> +3.2%
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card election-card">
+                        <div class="stat-content">
+                            <div class="stat-icon">
+                                <i class="fas fa-vote-yea"></i>
+                            </div>
+                            <div class="stat-value">2</div>
+                            <div class="stat-label">Active Elections</div>
+                            <div class="stat-change neutral">
+                                <i class="fas fa-minus"></i> 0.0%
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card funds-card">
+                        <div class="stat-content">
+                            <div class="stat-icon">
+                                <i class="fas fa-hand-holding-heart"></i>
+                            </div>
+                            <div class="stat-value">₦250K</div>
+                            <div class="stat-label">Total Donations</div>
+                            <div class="stat-change positive">
+                                <i class="fas fa-arrow-up"></i> +8.1%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-section">
+                <div class="section-header">
+                    <h2>Quick Actions</h2>
+                    <p>Access frequently used administrative functions</p>
+                </div>
+
+                <div class="quick-actions-grid">
+                    <div class="quick-action-card">
+                        <div class="action-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="action-content">
+                            <h3>Manage Users</h3>
+                            <p>View and manage all registered members</p>
+                            <div class="action-meta">
+                                <span class="item-count">1,250 members</span>
+                            </div>
+                        </div>
+                        <a href="#" class="action-button primary">
+                            <i class="fas fa-users"></i>
+                            View Users
+                        </a>
+                    </div>
+
+                    <div class="quick-action-card">
+                        <div class="action-icon">
+                            <i class="fas fa-sitemap"></i>
+                        </div>
+                        <div class="action-content">
+                            <h3>Branch Management</h3>
+                            <p>Oversee all branches and operations</p>
+                            <div class="action-meta">
+                                <span class="item-count">45 branches</span>
+                            </div>
+                        </div>
+                        <a href="#" class="action-button secondary">
+                            <i class="fas fa-sitemap"></i>
+                            Manage Branches
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-section">
+                <div class="content-tabs">
+                    <div class="tabs-header">
+                        <button class="tab-button active" data-tab="activities">Recent Activities</button>
+                        <button class="tab-button" data-tab="analytics">Analytics</button>
+                    </div>
+
+                    <div class="tabs-content">
+                        <div class="tab-pane active" id="activities">
+                            <div class="activity-feed">
+                                <div class="activity-item">
+                                    <div class="activity-icon">
+                                        <i class="fas fa-user-plus"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <div class="activity-text">
+                                            <strong>John Doe</strong> registered as a new member
+                                            <span class="activity-target">Lagos Branch</span>
+                                        </div>
+                                        <div class="activity-time">2 hours ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="analytics">
+                            <div class="charts-grid">
+                                <div class="chart-card">
+                                    <div class="chart-header">
+                                        <h4>User Growth</h4>
+                                        <span class="chart-period">Last 6 months</span>
+                                    </div>
+                                    <div class="chart-container">
+                                        <canvas id="userGrowthChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/dashboard.js"></script>
+</body>
+</html>
